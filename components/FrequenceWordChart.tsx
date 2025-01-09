@@ -1,11 +1,9 @@
-import React, { useMemo } from 'react'
+import React from 'react'
 import { CloudHail } from 'lucide-react'
-import ReactWordcloud from 'react-wordcloud';
 import { WordCloudComponent } from './WordCloudComponent';
 import {
   AlertDialog,
   AlertDialogAction,
-  AlertDialogCancel,
   AlertDialogContent,
   AlertDialogDescription,
   AlertDialogFooter,
