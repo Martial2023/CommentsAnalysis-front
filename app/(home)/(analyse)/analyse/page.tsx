@@ -35,7 +35,7 @@ type Word = {
 };
 
 
-const page = () => {
+const Analyse = () => {
   const [file, setFile] = useState<File | null>(null)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isDataProcessed, setIsDataProcessed] = useState(false)
@@ -267,4 +267,4 @@ const page = () => {
   )
 }
 
-export default page
+export default Analyse
