@@ -72,7 +72,7 @@ const page = () => {
               </div>
               {
                 !isSubmitting ? (
-                  <TextAnimate animation="slideLeft" by="character" className='text-xl mt-8 text-center text-nowrap'>
+                  <TextAnimate animation="slideLeft" by="character" className='text-xl mt-8 text-center'>
                     Soumettez vos commentaires dans un fichier .csv ou donner le lien de votre page de vente
                   </TextAnimate>
                 ) : (
