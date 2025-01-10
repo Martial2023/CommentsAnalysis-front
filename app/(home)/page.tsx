@@ -19,8 +19,8 @@ export default function Home() {
       </div>
 
       <div className="my-4 text-lg text-center">
-        <TextAnimate animation="slideLeft" by="character" className='text-xl mt-8 text-center'>
-          Analysez les avis clients avec précision et découvrez des insights clés pour améliorer vos produits et optimiser l'expérience d'achat.
+        <TextAnimate animation="slideLeft" by="character" className="text-xl mt-8 text-center">
+          Analysez les avis clients avec précision et découvrez des insights clés pour améliorer vos produits et optimiser l&apos;expérience d&apos;achat.
         </TextAnimate>
       </div>
 
@@ -36,7 +36,7 @@ export default function Home() {
                 <p className="text-sm text-gray-500 mt-2">
                   <span className="flex items-center space-x-1">
                     <TrendingUp className="h-4 w-4 text-green-500" />
-                    <span>Optimisez l'expérience client</span>
+                    <span>Optimisez l&apos;expérience client</span>
                   </span>
                 </p>
               </div>
@@ -50,12 +50,12 @@ export default function Home() {
               <BarChart className="h-8 w-8 text-blue-500 inline-block" />
               <div className="p-4">
                 <p className="text-xl">
-                  <span className="text-primary">CommentsAnalysis</span> exploite les retours clients pour extraire des insights clés, permettant ainsi une amélioration continue de l'expérience utilisateur.
+                  <span className="text-primary">CommentsAnalysis</span> exploite les retours clients pour extraire des insights clés, permettant ainsi une amélioration continue de l&apos;expérience utilisateur.
                 </p>
                 <p className="text-sm text-gray-500 mt-2">
                   <span className="flex items-center space-x-1">
                     <TrendingUp className="h-4 w-4 text-green-500" />
-                    <span>Améliorez l'expérience client</span>
+                    <span>Améliorez l&apos;expérience client</span>
                   </span>
                 </p>
               </div>
@@ -75,7 +75,7 @@ export default function Home() {
                 <p className="text-sm text-gray-500 mt-2">
                   <span className="flex items-center space-x-1">
                     <Lightbulb className="h-4 w-4 text-yellow-500" />
-                    <span>Optimisez vos services avec l'IA</span>
+                    <span>Optimisez vos services avec l&apos;IA</span>
                   </span>
                 </p>
               </div>
