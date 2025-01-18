@@ -95,15 +95,15 @@ const ModalFile = ({
 
             const formData = new FormData()
             formData.append("file", file as Blob)
-            //const response = await axios.post('http://127.0.0.1:8000/api/upload-csv/', formData, {
-            const response = await axios.post('https://7533-197-234-221-251.ngrok-free.app/api/upload-csv/', formData, {
+            const response = await axios.post('https://55cb-41-79-219-101.ngrok-free.app/api/upload-csv/', formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
-                }
+                },
+                timeout: 2*900000,//15 * 60000,
             }
             )
             console.log("Return", response.data)
-            if (response.status !== 200) {
+            if (response.status !== 200 || response.data.status !== 200) {
                 toast({
                     description: "Erreur lors du traitement des données",
                     variant: "destructive"
@@ -151,7 +151,7 @@ const ModalFile = ({
                     <CredenzaHeader>
                         <CredenzaTitle>Fichier .csv</CredenzaTitle>
                         <CredenzaDescription>
-                            Fournissez uniquement un fichier .csv ayant une colonne de commentaires nommée <span className="text-destructive">Comments</span>
+                            Fournissez uniquement un fichier .csv ayant une colonne de commentaires nommée <span className="text-destructive">Commentaire</span>
                         </CredenzaDescription>
                     </CredenzaHeader>
                     <CredenzaBody>

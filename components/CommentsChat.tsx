@@ -32,10 +32,18 @@ const CommentsChat = ({ messages, setMessages }: CommentChatProps) => {
         ]);
 
         try {
-            const formData = new FormData()
-            formData.append("question", questions.trim())
-            //const response = await axios.post('http://127.0.0.1:8000/api/chatbot/', formData)
-            const response = await axios.post('https://7533-197-234-221-251.ngrok-free.app/api/chatbot/', formData)
+            // const formData = new FormData()
+            // formData.append("question", questions.trim())
+            // const response = await axios.post('http://127.0.0.1:8000/api/chatbot/', formData)
+            const response = await axios.post(
+                'https://55cb-41-79-219-101.ngrok-free.app/api/chatbot/',
+                { questions }, // envoyer l'objet JSON
+                {
+                    headers: {
+                        'Content-Type': 'application/json', // Spécifier que c'est un JSON
+                    },
+                }
+            );
             
             console.log("Return", response.data)
             if (response.status !== 200) {

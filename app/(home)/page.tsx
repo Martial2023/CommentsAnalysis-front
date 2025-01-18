@@ -64,7 +64,7 @@ export default function Home() {
         </Card>
 
 
-        <Card className="p-4 border rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out h-96">
+        <Card className="p-4 border rounded-lg shadow-md hover:shadow-xl transition-all duration-300 ease-in-out md:h-96">
           <CardContent>
             <div className="flex items-center flex-col gap-4">
               <Cpu className="h-8 w-8 text-orange-500 inline-block" />
