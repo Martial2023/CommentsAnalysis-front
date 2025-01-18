@@ -71,7 +71,7 @@ const page = () => {
                             <div className="flex items-center justify-start gap-2">
                                 <Link2 className="w-6 h-6 text-yellow-500" />
                                 <p className="text-lg md:text-xl">
-                                    Comment analyser directement les commentaires d'un produit ?
+                                    Comment analyser directement les commentaires d&apos;un produit ?
                                 </p>
                             </div>
                         </AccordionTrigger>
