@@ -95,7 +95,7 @@ const ModalFile = ({
 
             const formData = new FormData()
             formData.append("file", file as Blob)
-            const response = await axios.post('https://55cb-41-79-219-101.ngrok-free.app/api/upload-csv/', formData, {
+            const response = await axios.post(process.env.NEXT_PUBLIC_API_URL + 'upload-csv/', formData, {
                 headers: {
                     "Content-Type": "multipart/form-data",
                 },

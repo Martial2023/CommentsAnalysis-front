@@ -53,7 +53,7 @@ const Analyse = () => {
 
 
   return (
-    <section className='mt-14'>
+    <section className='pt-14'>
       {
         !isDataProcessed ? (
           <div className='flex-1'>
@@ -80,9 +80,6 @@ const Analyse = () => {
                   </TextAnimate>
                 )
               }
-
-
-
             </div>
 
 

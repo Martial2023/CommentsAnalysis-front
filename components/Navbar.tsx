@@ -1,4 +1,4 @@
-import { Activity, ChartScatter, Home } from 'lucide-react'
+import { Activity, ChartScatter, Fan, Home } from 'lucide-react'
 import Link from 'next/link'
 import React from 'react'
 
@@ -26,6 +26,15 @@ const Navbar = () => {
                             <ChartScatter className='h-6 w-6 text-orange-600' />
                         </span>
                         Analyse
+                    </Link>
+                </div>
+                
+                <div className='p-4 flex items-center space-x-2 text-xl hover:translate-x-4 hover:bg-gray-50/5 rounded-md transition-all'>
+                    <Link href='/faq' className='flex items-center gap-3'>
+                        <span className='p-2 rounded-md bg-green-600/10'>
+                            <Fan className='h-6 w-6 text-green-600' />
+                        </span>
+                        FAQ
                     </Link>
                 </div>
             </nav>

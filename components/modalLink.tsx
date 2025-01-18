@@ -86,7 +86,7 @@ const ModalLink = ({
             // formData.append("productUrl", productUrl)
             // const response = await axios.post('http://127.0.0.1:8000/api/upload-product-url/', formData)
             const response = await axios.post(
-                'https://55cb-41-79-219-101.ngrok-free.app/api/upload-product-url/',
+                process.env.NEXT_PUBLIC_API_URL + 'upload-product-url/',
                 { productUrl }, // envoyer l'objet JSON
                 {
                     headers: {

@@ -86,7 +86,7 @@ export default function Home() {
 
       <div className="flex items-center justify-center mt-8">
         <Link href="/analyse">
-          <RainbowButton>Commencer</RainbowButton>
+          <RainbowButton className="dark:text-primary">Commencer</RainbowButton>
         </Link>
       </div>
     </section>
